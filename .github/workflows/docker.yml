@@ -8,4 +8,4 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Docker Monorepo Publish
-              uses: ivyxjc/docker-monorepo-action@master
+              uses: ivyxjc/docker-monorepo-action@v0.0.3
