@@ -9,3 +9,5 @@ jobs:
         steps:
             - name: Docker Monorepo Publish
               uses: ivyxjc/docker-monorepo-action@master
+              with:
+                  token: ${{ secrets.GIT_TOKEN}}
