@@ -8,4 +8,6 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Docker Monorepo Publish
-              uses: ivyxjc/docker-monorepo-action-1@master
+              uses: ivyxjc/docker-monorepo-action@master
+              with:
+                  token: ${{ secrets.GIT_TOKEN}}

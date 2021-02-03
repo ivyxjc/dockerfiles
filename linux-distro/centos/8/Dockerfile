@@ -1,1 +1,1 @@
-FROM centos:centos8.3.2011
+FROM centos:centos8.
