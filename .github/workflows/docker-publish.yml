@@ -25,5 +25,4 @@ jobs:
           python-version: 3.8
       - name: run docker python
         run: |
-          wget https://gist.githubusercontent.com/ivyxjc/8bf4c09745fa4429ae96b7b892df3252/raw/11fcf383262294203e2f1563c994e73293a467ea/actions-docker.py \
-          python  actions-docker.py
+          python https://gist.githubusercontent.com/ivyxjc/8bf4c09745fa4429ae96b7b892df3252/raw/11fcf383262294203e2f1563c994e73293a467ea/actions-docker.py
