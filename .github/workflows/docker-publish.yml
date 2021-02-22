@@ -23,9 +23,9 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: 3.8
-      - name: run docker python
+      - name: download docker python
         run: |
-          wget https://gist.githubusercontent.com/ivyxjc/8bf4c09745fa4429ae96b7b892df3252/raw/11fcf383262294203e2f1563c994e73293a467ea/actions-docker.py
+          wget https://gist.githubusercontent.com/ivyxjc/8bf4c09745fa4429ae96b7b892df3252/raw/e67cfaa91bc7843536a7a34b2cb4b0e1261d80df/actions-docker.py
       - name: run docker python
         run: |
           python ./actions-docker.py
