@@ -25,7 +25,7 @@ jobs:
                   python-version: 3.8
             - name: install python dependencies [requests]
               run: |
-                  python -m pip instlal -upgrade pip
+                  python -m pip install -upgrade pip
                   pip install requests
             - name: download docker python
               run: |
