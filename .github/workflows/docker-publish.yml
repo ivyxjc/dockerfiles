@@ -26,7 +26,7 @@ jobs:
             - name: install python dependencies [requests]
               run: |
                   python -m pip install --upgrade pip
-                  pip install requests,pytz
+                  pip install requests pytz
             - name: download docker python
               run: |
                   wget https://gist.githubusercontent.com/ivyxjc/8bf4c09745fa4429ae96b7b892df3252/raw/actions-docker.py
