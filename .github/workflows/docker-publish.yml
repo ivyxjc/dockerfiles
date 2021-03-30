@@ -25,9 +25,10 @@ jobs:
             - name: download docker python
               run: |
                   wget https://gist.githubusercontent.com/ivyxjc/8bf4c09745fa4429ae96b7b892df3252/raw/actions-docker.py
-            - name: run docker python
+            - name: docker logout
               run: |
                   docker logout
+
             - name: Login to DockerHub
               uses: docker/login-action@v1
               with:
