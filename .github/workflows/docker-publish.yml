@@ -30,5 +30,4 @@ jobs:
                   docker logout
             - name: run docker python
               run: |
-                  echo ${{secrets.DOCKERHUB_TOKEN}} | docker login --username ${{secrets.DOCKERHUB_USERNAME}} --password-stdin \
-                  && python ./actions-docker.py
+                  python ./actions-docker.py
