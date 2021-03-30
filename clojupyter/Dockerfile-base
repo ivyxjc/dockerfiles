@@ -15,5 +15,7 @@ RUN    	apt update \
     && ./linux-install-1.10.3.814.sh \
 	&& curl -o /usr/local/bin/lein https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein \
  	&& chmod +x /usr/local/bin/lein \
- 	&& lein self-install
+ 	&& lein self-install \
+    && rm -rf ./linux-install-1.10.3.814.sh \
+    && rm -rf /var/lib/apt/lists/*
 
