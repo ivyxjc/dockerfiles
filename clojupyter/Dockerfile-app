@@ -1,4 +1,4 @@
-FROM ivymirror/clojupyter-base:0.3.2
+FROM clojupyter-base:0.3.2
 LABEL maintainer="Klaus Harbo <klaus@harbo.net>"
 
 ARG NB_USER=jovyan
@@ -13,6 +13,8 @@ RUN	mkdir -p $NOTEBOOK_PATH \
     && git clone https://github.com/clojupyter/clojupyter $CLOJUPYTER_PATH
 
 WORKDIR $CLOJUPYTER_PATH
+ARG CLOJUPYTER_VERSION
+RUN echo $CLOJUPYTER_VERSION
 RUN git checkout $CLOJUPYTER_VERSION \
     && make install
 
